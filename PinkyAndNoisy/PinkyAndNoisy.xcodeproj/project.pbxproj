@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0B51322825B254CF00915545 /* PinkyAndNoisyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */; };
-		0B51322A25B254CF00915545 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322925B254CF00915545 /* ContentView.swift */; };
+		0B51322A25B254CF00915545 /* GeneratorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322925B254CF00915545 /* GeneratorScreen.swift */; };
 		0B51322C25B254D000915545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B51322B25B254D000915545 /* Assets.xcassets */; };
 		0B51322F25B254D000915545 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B51322E25B254D000915545 /* Preview Assets.xcassets */; };
+		0B6A9FCE25B34C0C00503A4B /* GeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B51322425B254CF00915545 /* PinkyAndNoisy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkyAndNoisy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyAndNoisyApp.swift; sourceTree = "<group>"; };
-		0B51322925B254CF00915545 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B51322925B254CF00915545 /* GeneratorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorScreen.swift; sourceTree = "<group>"; };
 		0B51322B25B254D000915545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B51322E25B254D000915545 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B51323025B254D000915545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,8 @@
 		0B51322625B254CF00915545 /* PinkyAndNoisy */ = {
 			isa = PBXGroup;
 			children = (
-				0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */,
-				0B51322925B254CF00915545 /* ContentView.swift */,
+				0B6A9FCB25B34BB000503A4B /* Startup */,
+				0B6A9FC825B34B8400503A4B /* Views */,
 				0B51322B25B254D000915545 /* Assets.xcassets */,
 				0B51323025B254D000915545 /* Info.plist */,
 				0B51322D25B254D000915545 /* Preview Content */,
@@ -67,6 +69,23 @@
 				0B51322E25B254D000915545 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B6A9FC825B34B8400503A4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B51322925B254CF00915545 /* GeneratorScreen.swift */,
+				0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B6A9FCB25B34BB000503A4B /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */,
+			);
+			path = Startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B51322A25B254CF00915545 /* ContentView.swift in Sources */,
+				0B51322A25B254CF00915545 /* GeneratorScreen.swift in Sources */,
+				0B6A9FCE25B34C0C00503A4B /* GeneratorViewModel.swift in Sources */,
 				0B51322825B254CF00915545 /* PinkyAndNoisyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

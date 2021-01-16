@@ -11,7 +11,7 @@ import SwiftUI
 struct PinkyAndNoisyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GeneratorScreen()
         }
     }
 }
