@@ -11,8 +11,12 @@ struct GeneratorScreen: View {
     @ObservedObject var viewModel = GeneratorViewModel()
 
     var body: some View {
-        Button("Start") {
-            viewModel.start()
+        Button(viewModel.generatorStarted ? "Stop" : "Start") {
+            if viewModel.generatorStarted {
+                viewModel.stop()
+            } else {
+                viewModel.start()
+            }
         }
     }
 }
