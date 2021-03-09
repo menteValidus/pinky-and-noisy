@@ -7,12 +7,13 @@
 
 import SwiftUI
 import AVFoundation
+import MediaPlayer
 
 @main
 struct PinkyAndNoisyApp: App {
     init() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers])
+            try AVAudioSession.sharedInstance().setCategory(.playback, options: [])
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print(error)
