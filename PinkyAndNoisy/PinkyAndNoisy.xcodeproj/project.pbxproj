@@ -61,7 +61,7 @@
 				0B6AA0AE25B370F600437D98 /* Models */,
 				0B6A9FCB25B34BB000503A4B /* Startup */,
 				0B6A9FC825B34B8400503A4B /* Views */,
-				0B51322B25B254D000915545 /* Assets.xcassets */,
+				0B601BBA25F767BA005F53DF /* Resources */,
 				0B51323025B254D000915545 /* Info.plist */,
 				0B51322D25B254D000915545 /* Preview Content */,
 			);
@@ -74,6 +74,14 @@
 				0B51322E25B254D000915545 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B601BBA25F767BA005F53DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B51322B25B254D000915545 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		0B6A9FC825B34B8400503A4B /* Views */ = {

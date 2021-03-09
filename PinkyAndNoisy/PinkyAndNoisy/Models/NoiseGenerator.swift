@@ -6,10 +6,13 @@
 //
 
 import AudioKit
+import AVKit
 
 final class NoiseGenerator {
     private let manager: AudioEngine
     private let pinkNoise: PinkNoise
+
+    private var audioPlayer: AVAudioPlayer?
 
     init(amplitude: Float) {
         manager = .init()
