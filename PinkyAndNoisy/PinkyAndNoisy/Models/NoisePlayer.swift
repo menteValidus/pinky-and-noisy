@@ -1,5 +1,5 @@
 //
-//  NoiseGenerator.swift
+//  NoisePlayer.swift
 //  PinkyAndNoisy
 //
 //  Created by Denis Cherniy on 16.01.2021.
@@ -8,7 +8,7 @@
 import AudioKit
 import AVKit
 
-final class NoiseGenerator {
+final class NoisePlayer {
     private let manager: AudioEngine
     private let pinkNoise: PinkNoise
 

@@ -22,7 +22,7 @@ struct PinkyAndNoisyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            GeneratorScreen()
+            PlayerScreen()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  GeneratorScreen.swift
+//  PlayerScreen.swift
 //  PinkyAndNoisy
 //
 //  Created by Denis Cherniy on 16.01.2021.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct GeneratorScreen: View {
-    @ObservedObject var viewModel = GeneratorViewModel()
+struct PlayerScreen: View {
+    @ObservedObject var viewModel = PlayerScreenViewModel()
 
     var body: some View {
         Button(viewModel.generatorStarted ? "Stop" : "Start") {
@@ -23,6 +23,6 @@ struct GeneratorScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GeneratorScreen()
+        PlayerScreen()
     }
 }

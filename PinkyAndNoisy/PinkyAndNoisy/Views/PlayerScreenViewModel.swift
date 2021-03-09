@@ -1,5 +1,5 @@
 //
-//  GeneratorViewModel.swift
+//  PlayerScreenViewModel.swift
 //  PinkyAndNoisy
 //
 //  Created by Denis Cherniy on 16.01.2021.
@@ -9,8 +9,8 @@ import Foundation
 import AVFoundation
 import MediaPlayer
 
-final class GeneratorViewModel: ObservableObject {
-    let soundGenerator: NoiseGenerator = .init(amplitude: 0.5)
+final class PlayerScreenViewModel: ObservableObject {
+    let soundGenerator: NoisePlayer = .init(amplitude: 0.5)
     private var nowPlayingInfo: [String: Any] = [:]
 
     @Published var generatorStarted: Bool = false

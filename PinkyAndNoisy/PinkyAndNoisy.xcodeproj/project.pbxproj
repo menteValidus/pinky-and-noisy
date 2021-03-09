@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0B51322825B254CF00915545 /* PinkyAndNoisyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */; };
-		0B51322A25B254CF00915545 /* GeneratorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322925B254CF00915545 /* GeneratorScreen.swift */; };
+		0B51322A25B254CF00915545 /* PlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51322925B254CF00915545 /* PlayerScreen.swift */; };
 		0B51322C25B254D000915545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B51322B25B254D000915545 /* Assets.xcassets */; };
 		0B51322F25B254D000915545 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B51322E25B254D000915545 /* Preview Assets.xcassets */; };
 		0B5B82E025C6742500FD13BF /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0B5B82DF25C6742500FD13BF /* AudioKit */; };
-		0B6A9FCE25B34C0C00503A4B /* GeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */; };
-		0B6AA0B025B3710200437D98 /* NoiseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AA0AF25B3710200437D98 /* NoiseGenerator.swift */; };
+		0B6A9FCE25B34C0C00503A4B /* PlayerScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A9FCD25B34C0C00503A4B /* PlayerScreenViewModel.swift */; };
+		0B6AA0B025B3710200437D98 /* NoisePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AA0AF25B3710200437D98 /* NoisePlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B51322425B254CF00915545 /* PinkyAndNoisy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkyAndNoisy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B51322725B254CF00915545 /* PinkyAndNoisyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyAndNoisyApp.swift; sourceTree = "<group>"; };
-		0B51322925B254CF00915545 /* GeneratorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorScreen.swift; sourceTree = "<group>"; };
+		0B51322925B254CF00915545 /* PlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScreen.swift; sourceTree = "<group>"; };
 		0B51322B25B254D000915545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B51322E25B254D000915545 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B51323025B254D000915545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModel.swift; sourceTree = "<group>"; };
-		0B6AA0AF25B3710200437D98 /* NoiseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseGenerator.swift; sourceTree = "<group>"; };
+		0B6A9FCD25B34C0C00503A4B /* PlayerScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScreenViewModel.swift; sourceTree = "<group>"; };
+		0B6AA0AF25B3710200437D98 /* NoisePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoisePlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,6 @@
 				0B6A9FCB25B34BB000503A4B /* Startup */,
 				0B6A9FC825B34B8400503A4B /* Views */,
 				0B601BBA25F767BA005F53DF /* Resources */,
-				0B51323025B254D000915545 /* Info.plist */,
 				0B51322D25B254D000915545 /* Preview Content */,
 			);
 			path = PinkyAndNoisy;
@@ -79,6 +78,7 @@
 		0B601BBA25F767BA005F53DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B51323025B254D000915545 /* Info.plist */,
 				0B51322B25B254D000915545 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -87,8 +87,8 @@
 		0B6A9FC825B34B8400503A4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0B51322925B254CF00915545 /* GeneratorScreen.swift */,
-				0B6A9FCD25B34C0C00503A4B /* GeneratorViewModel.swift */,
+				0B51322925B254CF00915545 /* PlayerScreen.swift */,
+				0B6A9FCD25B34C0C00503A4B /* PlayerScreenViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		0B6AA0AE25B370F600437D98 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0B6AA0AF25B3710200437D98 /* NoiseGenerator.swift */,
+				0B6AA0AF25B3710200437D98 /* NoisePlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B6AA0B025B3710200437D98 /* NoiseGenerator.swift in Sources */,
-				0B51322A25B254CF00915545 /* GeneratorScreen.swift in Sources */,
-				0B6A9FCE25B34C0C00503A4B /* GeneratorViewModel.swift in Sources */,
+				0B6AA0B025B3710200437D98 /* NoisePlayer.swift in Sources */,
+				0B51322A25B254CF00915545 /* PlayerScreen.swift in Sources */,
+				0B6A9FCE25B34C0C00503A4B /* PlayerScreenViewModel.swift in Sources */,
 				0B51322825B254CF00915545 /* PinkyAndNoisyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PinkyAndNoisy/Preview Content\"";
 				DEVELOPMENT_TEAM = MX9H24GGG2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PinkyAndNoisy/Info.plist;
+				INFOPLIST_FILE = PinkyAndNoisy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,7 +341,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PinkyAndNoisy/Preview Content\"";
 				DEVELOPMENT_TEAM = MX9H24GGG2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PinkyAndNoisy/Info.plist;
+				INFOPLIST_FILE = PinkyAndNoisy/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
